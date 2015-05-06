@@ -1,0 +1,22 @@
+// Components :: Button
+
+.btn {
+  border-radius: $border-radius-btn;
+  padding: $btn-padding;
+}
+
+.btn-lg {
+  padding: $btn-padding-lg;
+}
+
+.btn-primary {
+  @include linear-gradient(lighten($color-branding, 6), $color-branding);
+  border-color: darken($color-branding, 4);
+  box-shadow: 0 1px 0 rgba($white, 0.3) inset, $z-depth-0;
+  text-shadow: 0 0 1px rgba($black, 0.3);
+
+  &:hover {
+    background: $color-branding;
+    border-color: darken($color-branding, 4);
+  }
+}

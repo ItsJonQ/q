@@ -7,11 +7,45 @@
   position: relative;
   margin-bottom: $gutter;
 
+  &__background {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &:after {
+      @include linear-gradient(0deg, rgba($black, 0.8) 0%, rgba($black, 0) 50%);
+      background-color: rgba($black, 0.1);
+      bottom: 0;
+      content: "";
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: $z-index-app-default;
+    }
+
+    img {
+      bottom: -9999px;
+      height: auto;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: -9999px;
+      width: 100%;
+      z-index: $z-index-app-default;
+    }
+  }
+
   &__content {
     bottom: $gutter;
     left: 0;
     position: absolute;
     right: 0;
+    z-index: $z-index-app-cover;
   }
 
   &__avatar {
@@ -24,10 +58,21 @@
     width: $cover-avatar-width;
     height: $cover-avatar-height;
     z-index: $z-index-app-cover-avatar;
+
+    img {
+      display: block;
+      height: 100%;
+      left: -9999px;
+      margin: auto;
+      position: absolute;
+      right: -9999px;
+      width: auto;
+    }
   }
 
   &__name {
     margin-top: 0;
+    text-shadow: $z-depth-text;
   }
 
   &__handle {

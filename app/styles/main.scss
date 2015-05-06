@@ -10,6 +10,7 @@
 @import "variables/typography";
 @import "variables/z-depth";
 @import "variables/border";
+@import "variables/button";
 @import "variables/cover";
 
 // Mixins
@@ -17,10 +18,11 @@
 @import "mixins/viewport";
 
 // Base
-
+@import "base/typography";
 
 // Components
 @import "components/scaffolding";
+@import "components/button";
 @import "components/cover";
 @import "components/timeline";
 
