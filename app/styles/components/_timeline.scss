@@ -1,0 +1,12 @@
+// Components :: Timeline
+
+.timeline {
+
+  &__item {
+    background-color: $white;
+    box-shadow: $z-depth-1;
+    padding: $keyline-double;
+    margin-bottom: $keyline-double;
+  }
+
+}

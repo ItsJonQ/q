@@ -1,5 +1,37 @@
 // Components :: Cover
 
 .cover {
+  background-color: $black;
+  color: $white;
+  height: $cover-height;
+  position: relative;
+  margin-bottom: $gutter;
 
+  &__content {
+    bottom: $gutter;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+  &__avatar {
+    @include transform(translate3d(0, -20%, 0));
+    background-color: $white;
+    border-radius: $border-radius;
+    box-shadow: $z-depth-3;
+    overflow: hidden;
+    position: absolute;
+    width: $cover-avatar-width;
+    height: $cover-avatar-height;
+    z-index: $z-index-app-cover-avatar;
+  }
+
+  &__name {
+    margin-top: 0;
+  }
+
+  &__handle {
+    margin-bottom: 0;
+    opacity: 0.7;
+  }
 }

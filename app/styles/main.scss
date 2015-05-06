@@ -8,8 +8,13 @@
 @import "variables/grid";
 @import "variables/color";
 @import "variables/typography";
+@import "variables/z-depth";
+@import "variables/border";
+@import "variables/cover";
 
 // Mixins
+@import "mixins/spacing";
+@import "mixins/viewport";
 
 // Base
 
@@ -17,3 +22,7 @@
 // Components
 @import "components/scaffolding";
 @import "components/cover";
+@import "components/timeline";
+
+// States
+@import "states/timeline";

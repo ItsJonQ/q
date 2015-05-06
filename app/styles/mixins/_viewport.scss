@@ -1,0 +1,39 @@
+// Mixins :: Viewport
+
+@mixin viewport-xs() {
+  @media (max-width: ($screen-xs-max) ) {
+    @content;
+  }
+}
+
+@mixin viewport-sm() {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin viewport-md() {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin viewport-lg() {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
+
+// Restricting
+
+@mixin viewport-md-only() {
+  @media (max-width: ($screen-md-min - 1)) {
+    @content;
+  }
+}
+
+@mixin viewport-lg-only() {
+  @media (max-width: ($screen-lg-min - 1)) {
+    @content;
+  }
+}

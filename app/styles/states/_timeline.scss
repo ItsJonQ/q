@@ -1,0 +1,9 @@
+// States :: Timeline
+
+.timeline__item {
+
+  &.is-promoted {
+    box-shadow: $z-depth-4;
+    margin-bottom: $gutter;
+  }
+}
