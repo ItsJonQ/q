@@ -3,7 +3,10 @@
 .timeline__item {
 
   &.is-promoted {
+    @include transform(scale(1.05));
     box-shadow: $z-depth-4;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-light;
     margin-bottom: $gutter;
   }
 }

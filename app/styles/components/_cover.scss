@@ -49,10 +49,10 @@
   }
 
   &__avatar {
-    @include transform(translate3d(0, -20%, 0));
     background-color: $white;
     border-radius: $border-radius;
     box-shadow: $z-depth-3;
+    margin-top: $cover-avatar-offset * -1;
     overflow: hidden;
     position: absolute;
     width: $cover-avatar-width;
