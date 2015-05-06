@@ -1,0 +1,21 @@
+// Components :: Scaffolding
+
+html, body, input, button {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  height: 100%;
+  line-height: $line-height-base;
+}
+
+a {
+  color: $color-link;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
