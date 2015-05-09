@@ -28,15 +28,7 @@
     }
 
     img {
-      bottom: -9999px;
-      height: auto;
-      left: 0;
-      margin: auto;
-      position: absolute;
-      right: 0;
-      top: -9999px;
-      width: 100%;
-      z-index: $z-index-app-default;
+      @include image-absolute-center(vert);
     }
   }
 
@@ -60,13 +52,7 @@
     z-index: $z-index-app-cover-avatar;
 
     img {
-      display: block;
-      height: 100%;
-      left: -9999px;
-      margin: auto;
-      position: absolute;
-      right: -9999px;
-      width: auto;
+      @include image-absolute-center(hor);
     }
   }
 
