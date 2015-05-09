@@ -1,5 +1,35 @@
 // Components :: Profile
 
 .profile-card {
-  padding-top: $cover-avatar-offset;
+  &__avatar {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 160px;
+    img {
+      @include image-absolute-center(vert);
+    }
+  }
+
+  &__body {
+    padding: $keyline-double;
+  }
+}
+
+// Modifiers
+.profile-card {
+  &--main {
+    padding-top: $cover-avatar-offset;
+  }
+
+  &--white {
+    @include transition(all 0.3s ease);
+    background-color: $white;
+    box-shadow: $z-depth-1;
+
+    &:hover {
+      @include transform(translate3d(0, -2px, 0));
+      box-shadow: $z-depth-3;
+    }
+  }
 }
