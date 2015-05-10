@@ -1,0 +1,17 @@
+// Components :: Card
+
+.card {
+  @include transition(all 0.3s ease);
+  background-color: $white;
+  box-shadow: $z-depth-1;
+  margin-bottom: $keyline-double;
+
+  &:hover {
+    @include transform(translate3d(0, -2px, 0));
+    box-shadow: $z-depth-3;
+  }
+
+  &__body {
+    padding: $keyline-double;
+  }
+}

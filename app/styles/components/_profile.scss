@@ -21,15 +21,4 @@
   &--main {
     padding-top: $cover-avatar-offset;
   }
-
-  &--white {
-    @include transition(all 0.3s ease);
-    background-color: $white;
-    box-shadow: $z-depth-1;
-
-    &:hover {
-      @include transform(translate3d(0, -2px, 0));
-      box-shadow: $z-depth-3;
-    }
-  }
 }
