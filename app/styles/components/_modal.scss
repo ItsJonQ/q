@@ -1,0 +1,19 @@
+// Components :: Modal
+
+.modal {
+
+}
+
+.modal-backdrop {
+  @include transition(all 0.5s ease-in);
+  @include transform(scale(0));
+  @include transform-origin(left top);
+  background-color: $off-white;
+  border-radius: 200%;
+
+  &.in {
+    @include transform(scale(1));
+    border-radius: 0;
+    opacity: 1;
+  }
+}
